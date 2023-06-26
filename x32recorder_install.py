@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 # X32RECORDER INSTALLATION
 import os
 import sys
@@ -53,10 +53,12 @@ comando ("sudo apt-get install xfsprogs")
 
 print "Installing RTMIDI"
 comando ("sudo apt-get install libasound2-dev")
+comando ("sudo apt-get install libjack")
 comando ("sudo apt-get install libjack-dev")
 comando ("sudo apt update")
 comando ("sudo apt install python-pip")
-comando ("pip install python-rtmidi")
+#Python2: comando ("pip install python-rtmidi")
+comando ("sudo apt install python-rtmidi")
 
 
 print "Installing samba server"
